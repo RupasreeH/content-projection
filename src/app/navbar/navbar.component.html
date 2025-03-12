@@ -1,0 +1,10 @@
+<p-sidebar [(visible)]="sideBarVisible">
+  <h3 [routerLink]="'/parent'" (click)="sideBarVisible = false">Parent</h3>
+  <h3 [routerLink]="'/child'" (click)="sideBarVisible = false">Child</h3>
+</p-sidebar>
+
+<p-button
+  (click)="sideBarVisible = true"
+  icon="pi pi-arrow-right"
+  label="Open Sidebar"
+/>

@@ -11,6 +11,7 @@ export class ContentChildComponent {
   @ContentChild('valueFromParent') valueFromParent: ElementRef | undefined;
 
   ngAfterContentInit() {
+    // Trythis
     console.log(this.valueFromParent?.nativeElement.textContent);
   }
   ngAfterContentChecked() {

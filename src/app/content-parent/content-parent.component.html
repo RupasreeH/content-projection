@@ -1,11 +1,11 @@
 <p>content-parent works!</p>
-<input type="text" #myinput (input)="(0)" />
+<input type="text" #myInput (input)="(0)" />
 
 <app-content-child>
   <div>This is the content from the parent</div>
   <hr />
-  <div>
-    {{ myinput.value }}
+  <div #valueFromParent>
+    {{ myInput.value }}
   </div>
   <hr />
   <!-- <div>This is the second content from parent</div> -->
